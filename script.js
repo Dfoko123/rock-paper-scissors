@@ -10,3 +10,13 @@ function getComputerChoice(){
         return "scissors";
     }
 }
+function gethumanChoice(){
+    let choice=prompt("Que choisisez vous?: ");
+    choice=choice.toLowerCase();
+    if(choice==="rock" || choice=="paper" || choice==="scissors"){
+        return choice;
+    }
+    else{
+        console.log("Please choose between paper, rock, scissors and try again");
+    }
+}
