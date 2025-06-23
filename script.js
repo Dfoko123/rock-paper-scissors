@@ -10,6 +10,7 @@ function getComputerChoice(){
         return "scissors";
     }
 }
+console.log(getComputerChoice());
 function gethumanChoice(){
     let choice=prompt("Que choisisez vous?: ");
     choice=choice.toLowerCase();
@@ -20,3 +21,6 @@ function gethumanChoice(){
         console.log("Please choose between paper, rock, scissors and try again");
     }
 }
+console.log(gethumanChoice());
+let humanScore=0;
+let computerScore=0;
