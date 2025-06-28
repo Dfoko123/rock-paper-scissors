@@ -76,5 +76,14 @@ function playGame(){
     let computerSelection5=getComputerChoice();
     let humanSelection5=gethumanChoice();
     playRound(computerSelection5,humanSelection5);
+    if (humanScore>computerScore){
+        console.log("Human is winner");
+    }
+    else if(humanScore<computerScore){
+        console.log("Computer is winner")
+    }
+    else{
+        console.log("equal, no winner");
+    }
 }
 playGame();
