@@ -20,8 +20,7 @@ function gethumanChoice(){
         console.log("Please choose between paper, rock, scissors and try again");
     }
 }
-let humanScore=0;
-let computerScore=0;
+
 function playRound(humanChoice, computerChoice){
     if(humanChoice==='paper'&& computerChoice==='rock'){
         console.log('paper beats rock');
@@ -54,6 +53,28 @@ function playRound(humanChoice, computerChoice){
         console.log("error");
     }
 }
-let computerSelection=getComputerChoice();
-let humanSelection=gethumanChoice();
-playRound(humanSelection,computerSelection);
+let humanScore=0;
+let computerScore=0;
+function playGame(){
+    console.log("Round 1");
+    let computerSelection=getComputerChoice();
+    let humanSelection=gethumanChoice();
+    playRound(computerSelection,humanSelection);
+    console.log("Round 2");
+    let computSelection=getComputerChoice();
+    let humSelection=gethumanChoice();
+    playRound(computSelection,humSelection);
+    console.log("Round 3");
+    let computerSelection3=getComputerChoice();
+    let humanSelection3=gethumanChoice();
+    playRound(computerSelection3,humanSelection3);
+    console.log("Round 4");
+    let computerSelection4=getComputerChoice();
+    let humanSelection4=gethumanChoice();
+    playRound(computerSelection4,humanSelection4);
+    console.log("Round 5")
+    let computerSelection5=getComputerChoice();
+    let humanSelection5=gethumanChoice();
+    playRound(computerSelection5,humanSelection5);
+}
+playGame();
